@@ -19,9 +19,9 @@ public class MyPortfolio {
 
 		log.info("App Running");
 
- 		log.info("Beans Loaded: ");
+ 		log.info("Beans Autoloaded: ");
 		for (String name : appContext.getBeanDefinitionNames()) {
-			log.info(name);
+			log.info("Autoloaded Bean name: " + name);
 		}
 
 /*		Map<java.lang.String, IDataSource> dss = appContext.getBeanFactory().getBeansOfType(IDataSource.class);
